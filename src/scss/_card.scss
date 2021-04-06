@@ -1,0 +1,77 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.container {
+  background-color: white;
+  border-radius: 14px;
+  max-width: 20.375em;
+  max-height: 23.375em;
+  margin: 9.0775em auto 2em auto;
+  overflow: hidden;
+  font-family: "Kumbh Sans", sans-serif;
+
+  @include breakpoint-up(medium) {
+    max-width: 21.875em;
+  }
+}
+
+header {
+  background-image: url(../images/bg-pattern-card.svg);
+  min-height: 8.8125em;
+  position: relative;
+
+  img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    border: solid white 5px;
+    border-radius: 50%;
+  }
+}
+main {
+  margin-top: 4.75em;
+  text-align: center;
+  color: $darkGray;
+
+  .name {
+    display: inline-block;
+    color: $veryDarkDesaturatedBlue;
+    font-size: $nameAndStats;
+    font-weight: 700;
+    margin-bottom: 0.6em;
+  }
+  p {
+    margin: 0;
+    font-size: $font-s;
+    margin-bottom: 1.7em;
+  }
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-top: solid $darkGray 0.5px;
+  padding: 1.8em 55px 1.8em 38px;
+
+  .col {
+    text-align: center;
+
+    p {
+      color: $darkGray;
+      margin: 0;
+      font-size: $font-xs;
+      letter-spacing: 0.23em;
+    }
+  }
+
+  .stats {
+    display: inline-block;
+    color: $veryDarkDesaturatedBlue;
+    font-size: $nameAndStats;
+    font-weight: 700;
+    padding-bottom: 0.39em;
+    letter-spacing: 0.04em;
+  }
+}

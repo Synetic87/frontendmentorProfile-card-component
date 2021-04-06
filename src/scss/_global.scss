@@ -1,0 +1,18 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+body {
+  height: 100vh;
+  background-color: $darkCyan;
+  background-image: url(../images/bg-pattern-top.svg),
+    url(../images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat;
+  background-size: contain, cover;
+  background-position: left -11em top -10em, bottom -21em right -36em;
+  overflow: hidden;
+
+  @include breakpoint-up(medium) {
+    background-size: contain, contain;
+    background-position: left -12em top -28em, bottom -22em right -10em;
+  }
+}
