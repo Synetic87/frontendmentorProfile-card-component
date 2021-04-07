@@ -28,11 +28,11 @@ Using SASS.
 
 Desktop version
 
-![desktop-version](/screenshot/desktop-view.png)
+![desktop-version](/src/screenshot/desktop-view.png)
 
 Mobile version
 
-![mobile-version](/screenshot/mobile-view.png)
+![mobile-version](/src/screenshot/mobile-view.png)
 
 ### Links
 
